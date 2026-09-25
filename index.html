@@ -55,9 +55,7 @@ main{
   font-size:clamp(1.6rem,6.5vw,2.4rem);line-height:1.15;max-width:18ch;
 }
 .nombre.pista{font-family:inherit;font-size:1rem;color:var(--muted);max-width:none}
-.lista{margin:0 0 2rem;width:100%;max-width:34rem}
-.lista summary{cursor:pointer;color:var(--muted);padding:.4rem}
-.lista ol{text-align:left;columns:2 14rem;column-gap:2rem;margin:1rem 0 0;padding-left:2rem}
+.lista{text-align:left;width:100%;max-width:34rem;margin:0 0 2rem;columns:2 14rem;column-gap:2rem;padding-left:2rem}
 .lista li{padding:.15rem 0;break-inside:avoid}
 .nota{margin:1.25rem 0 0;max-width:34rem;color:var(--muted);font-size:.9rem}
 @keyframes tiembla{0%,100%{opacity:.12}50%{opacity:.34}}
@@ -77,6 +75,7 @@ h1{
   .tortuga,.halo{animation:none}
   .halo{opacity:.22}
 }
+
 </style>
 </head>
 <body>
@@ -109,7 +108,7 @@ h1{
   <p class="origen">En náhuatl, el nombre suele interpretarse como "río de las tortuguitas".</p>
   <p class="hechos">La noche del 26 de septiembre de 2014, 43 estudiantes de la Escuela Normal Rural Raúl Isidro Burgos fueron desaparecidos en Iguala, Guerrero. Cada luz del caparazón es uno de ellos.</p>
   <p class="lema">¡Vivos se los llevaron, vivos los queremos!</p>
-  <details class="lista"><summary>Ver los 43 nombres</summary><ol id="lista"></ol></details>
+  <ol class="lista" id="lista"></ol>
   <p class="pie">Verdad y justicia para los 43.</p>
   <p class="nota">Los restos de tres de ellos (Alexander Mora Venancio, Christian Alfonso Rodríguez Telumbre y Jhosivani Guerrero de la Cruz) han sido identificados; sus familias siguen exigiendo verdad y justicia. Lista según el Mecanismo Especial de Seguimiento de la CIDH.</p>
 </main>
